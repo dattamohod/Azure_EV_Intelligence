@@ -1,0 +1,25 @@
+{
+	"name": "ds_pipeline_audit_csv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_bronze",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "pipeline_audit.csv",
+				"folderPath": "audit",
+				"fileSystem": "bronze"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

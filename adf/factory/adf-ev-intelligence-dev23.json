@@ -1,0 +1,15 @@
+{
+	"name": "adf-ev-intelligence-dev23",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "88ccbeb9-c5d2-4b10-90af-3b5cdc021065",
+		"tenantId": "75a5683d-4963-4e69-818e-94feeae5b7f5"
+	}
+}

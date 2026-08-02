@@ -1,0 +1,33 @@
+{
+	"name": "pl_silver_blob_reports",
+	"properties": {
+		"activities": [
+			{
+				"name": "Notebook1",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/mahallehrushikesh1@gmail.com/silver_transformation/03_silver_blob_reports_job_params_v3",
+					"baseParameters": {
+						"load_type": "incremental"
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "ls_databricks_workspace",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-08-01T13:11:33Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
